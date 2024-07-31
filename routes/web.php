@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 
 /*Route::get('/', function () {
     return view('welcome');
@@ -28,3 +29,9 @@ Route::get('/photos', function () {
 });
 */
 
+=======
+use App\Http\Controllers\StudentController;
+
+Route::get('/',[StudentController::class,'viewForm'])->name('home');
+Route::post('/add-student',[StudentController::class,'addStudent']);
+>>>>>>> 7364533a8bc957eac886b0abd87884bdc7ca4ae0
