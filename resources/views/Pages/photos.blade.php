@@ -1,0 +1,1 @@
+<x-layout>Photos</x-layout>
