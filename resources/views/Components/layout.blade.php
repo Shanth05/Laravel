@@ -15,14 +15,72 @@
                <x-nav/>
             </td>
         <td>
-           {{request()->is('/')}}
-            {{true}}
-            <br>
+            01.page:
+            {{request()->path('/')}}
+
+            <br> 02.url :
+            {{request()->url('/')}}
+
+            <br> 03.host :
             {{request()->host('/')}}
-            <br>
+
+            <br> 04.httphost :
             {{request()->httphost('/')}}
-            <br>
-            {{request()->routeIs('/')}}
+
+            <br> 05.schemeAndHttpHost :
+            {{request()->schemeAndHttpHost('/')}}
+
+            <br> 06.method :
+            {{request()->method('/')}}
+
+            <br> 07.header :
+            {{request()->header('/')}}
+
+            <br> 08.hasHeader :
+            {{request()->hasHeader('/')}}
+
+            <br> 09.ip :
+            {{request()->ip('/')}}
+
+            {{-- <br> ip :
+            {{request()->ip('/')}}
+
+            <br> getAcceptableContentTypes :
+            {{request()->getAcceptableContentTypes('/')}}
+
+            <br> all :
+            {{request()->all('/')}}  --}}
+
+            <br> 10.collect :
+            {{request()->collect('/')}}
+
+            <br> 11.input :
+            {{request()->input('/')}}
+
+            <br> 12.query :
+            {{request()->query('/')}}
+
+            <br> 13.boolean :
+            {{request()->boolean('/')}}
+
+            <br> 14.date :
+            {{request()->date('/')}}
+
+            <br> 15.flash :
+            {{request()->flash('/')}}
+
+            
+            <br> 16.old :
+            {{request()->old('/')}}
+
+            <br> 17.cookie :
+            {{request()->cookie('/')}}
+
+            <br> 18.file :
+            {{request()->file('/')}}
+            
+            {{-- <br> 19.getAcceptableContentTypes :
+            {{request()->getAcceptableContentTypes('/')}} --}}
 
             {{$slot}}
            

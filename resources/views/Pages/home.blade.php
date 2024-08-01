@@ -1,1 +1,4 @@
-<x-layout>Home</x-layout>
+<x-layout>
+    Home
+    {{-- {{$marks}} --}}
+</x-layout>
