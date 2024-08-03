@@ -6,14 +6,20 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/', function () {
-    $marks=[
-        "Maths"=>90,
-        "Science"=>80,
-        "English"=>70
-    ];
-    return view('welcome',['marks'=>$marks]);
-});
+// Route::get('/', function () {
+//     $marks=[
+//         "Maths"=>90,
+//         "Science"=>80,
+//         "English"=>70
+//     ];
+//     // function dumfordie($mark){
+//     //     dump($mark);
+//     //     die();
+//     // };
+//     return view('welcome',['marks'=>$marks]);
+//     // return  dumfordie($marks);
+
+// });
 
 
 // Route::get('/page', function () {
@@ -22,7 +28,12 @@ Route::get('/', function () {
 // });
 
 Route::get('/{p?}', function ($p='home') {
-    return view("pages/".$p);
+    $marks=[
+        "Maths"=>90,
+        "Science"=>80,
+        "English"=>70
+    ];
+    return view('pages/'.$p,['marks'=>$marks]);
 });
 
 /*Route::get('/about', function () {
