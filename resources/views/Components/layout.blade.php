@@ -10,7 +10,8 @@
             }
         </style> --}}
 
-        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
+        {{-- <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/> --}}
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     </head>
 
@@ -148,7 +149,7 @@
             </div>
           </div>
 
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        {{-- <script src="{{asset('js/bootstrap.min.js')}}"></script> --}}
         
     </body>
 </html>
